@@ -1,0 +1,70 @@
+Jireh vivar 
+Jxv220001
+
+<---DisneyLand Reward Program---->
+<** classes are going to be in real code but not in pseudocode according to my understanding of the rubrics**>
+define 2D array of preferred customers
+define 2D array of regular customers
+ 
+
+function readingCustomerData(){
+	currentData = the array of strings
+	read through array -1
+	return currentData 
+}
+
+function totalCost(){
+	declare radius, 
+	height, 
+	ounces,
+	ouncePrice,
+	sqInPrice,
+	totalCost;
+	return totalCost = (PI * radius * height * ounces * ouncePrice) + sqInPrice
+
+
+}
+
+function processCustomerData(){
+	declare boolean writeIntoRegularOrPreferredFile = false;
+	if totalCost < 50
+		then write into customer file
+		
+	else if totalCost is > 50 {
+		then write into preferred customer file
+		divide the totalCost to find discount amount
+		if totalCost is >= 50 and < 100
+			then discount is 0.05
+		else if totalCost is >= 100 and < 150 
+			then discount is 0.10
+		else if totalCost is >= 150 and up 
+			then  discount is 0.15
+	}
+	totalCost -= (totalCost * discount) 
+}
+
+main(){
+	open file of preferred customers
+	open file of regular customers
+	open file of orders
+	create new files if they dont exist
+	currentData = readingCustomerData
+	processCustomerData();
+	if writeIntoRegularOrPreferredFile returns true
+		write current data into customerFile
+	else if returns false
+		write into preferredFile
+
+}
+ ←—test cases—-->
+Test if files open
+Process order of customer already at gold status
+Process order of customer already at platinum status
+Process order of fresh customer
+Process order of customer making multiple orders
+Test order of customer that is invalid input of -1
+Test if reading file correctly 
+Test empty files 
+Order of a single beverage
+Test preferred files and written files
+
